@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<!-- <script src="js/jquery-3.2.1.slim.min.js"></script> --><!--      THƯ VIỆN CỦA jQUERY            	 -->
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script><!--dùng cdn không cần phải tải file jquery về máy-->
+		<script>
+			window.jQuery || document.write("<script src='js\/jquery-3.2.1.slim.min.js'><\/script>"); 
+		</script><!-- nếu như CDN ở trên bị chết thì nó sẽ chạy cái ở dưới. -->	
+		<script>
+			$(document).ready(function () {
+				$('#btn1').click(function () {
+					alert('ok');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="btn1">click here</button>
+	</body>
+</html>

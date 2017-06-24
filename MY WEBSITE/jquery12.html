@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				// $('li').each(function (index,element) {
+				// 	// alert($(this).text());
+				// 	// alert('index' + index + ".element:" +$(element).text());
+				// 	if ($(this).text() == 'china' )//dùng if thì china sẽ được bôi màu đỏ
+				// 		return false; // sử dụng return false để ngắt vòng lập. vòng lập sẽ bị ngắt ở china. 
+				// 	$(this).css('color' , 'red');
+				// });//dùng hàm each để đi qua từng phần tử 1 của ul li. each là truyền nhận 1 tham số hàm nạp danh. this là mỗi lần đi qua 1 phần tử của li thì this sẽ đại diện cho 1 phần tử của li.
+
+				//Method chaining
+				$('li').css('color' , 'red' )
+				.slideUp(1000)
+				.slideDown(1000)
+				.attr('title' , 'ok' );
+			});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>us</li>
+			<li>england</li>
+			<li>china</li>
+			<li>russia</li>
+			<li>thailan</li>
+			<li>vietnam</li>
+		</ul>
+		<br>
+		<div id="result">
+			
+		</div>
+	</body>
+</html>

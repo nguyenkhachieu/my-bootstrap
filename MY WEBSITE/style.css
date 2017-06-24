@@ -1,0 +1,122 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body{
+	font-style: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300px;
+	color:#333;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+a:hover{
+	color: red;
+	background-color: #999;
+}
+/*chia cột website*/
+#container {
+	padding-left: 150px;
+	position: relative;
+	left: 0;
+	width: 100%;
+}
+#menu {
+	position: fixed;/*menu cố định*/
+	height: 100%;
+	background-color: #000077;
+	width: 150px;
+	left: 0;/*khung menu sẽ dịch chuyển vào trong cùng*/
+}
+/*menu*/
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#menu ul li {
+	line-height: 2.9em;
+	height: 2.9em;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	position: relative;
+}
+#menu ul li a {
+	display: block;
+	color: #fff;
+	padding: 0 1em;
+	border-bottom: 1px solid #333;
+}
+#menu .dichvucon {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+#menu ul li:hover .dichvucon {
+	display: block;
+	background-color: #000077;
+	width: 200px;
+
+}
+#menu .hoidapcon {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+#menu ul li:hover .hoidapcon {
+	display: block;
+	background-color: #000077;
+	width: 200px;
+
+}
+
+/*Content*/
+#content {
+	padding: 1em 8em;
+}
+#header, .call-to-action {
+	text-align: center;
+}
+#header, #slogan {
+	color: blue;
+	font-style: italic;
+}
+	
+.call-to-action  {
+	padding: 1.5em ;
+	background-color: #efefef;
+	border: 1px solid #999;
+}
+.row {
+	overflow: hidden;
+	margin: 1.5em auto;
+}
+.row .col {
+	float:left;
+	width: 29%;
+	margin-right: 2em;
+}
+.row .col #box3 {
+	float: right;
+	margin-right: 0;
+
+}
+.row .col img {
+	float: left;
+	padding: 5px;
+}/*chuyển hình qua bên trái của chữ.*/
+#footer {
+	font-size: 85%;
+	border-top: 1px solid #e6e6e6;
+	color: #838383;
+	padding: 1em 3em;
+}

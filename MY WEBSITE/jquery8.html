@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<style>
+			.my-border{
+				border: 1px solid red;
+			}
+		</style>
+		<script src="js/jquery-3.2.1.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				$('[title*="iv"]').addClass('my-border')// [title$="2"] là câu lệnh tìm cái title nào kết thúc bằng 2. 
+				//[title^="a"] tìm cái title nào bắt đầu bằng a.
+				//[title*="iv"] tìm cái title nào chứa iv
+			}); 
+		</script>
+	</head>
+	<body>
+		<div class="demo1" title="div1">
+			<span>this is the first</span>
+		</div>
+		<div class="demo" title="div2">
+			<span>this is the secon</span>
+		</div>
+		<div class="demo" title="div2">
+			<span>this is the third</span>
+		</div>
+		<div class="demo" title="abc">
+			<span>this is the fourth</span>
+		</div>
+	</body>
+</html>

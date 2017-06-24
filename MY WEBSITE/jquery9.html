@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				// $('#btn1').click(function(){
+				// 	$('#lbl1').text('click here2121');//dùng text để gán thêm chữ vào cái lable khi ta nhấn chuột vào click here
+				// });	
+				// 	$('#btn2').click(function(){
+				// 	alert($('#lbl1').text());
+				// });
+				// 	$('#btn3').click(function(){
+				// 	$('#lbl1').attr('style' , 'color: red;'); //thay đổi màu cho lable
+				// });
+
+				// $('#btn1').click(function(){
+				// 	$('#link1').attr('href' , 'https://www.google.co.in/'); //chuyển cái link từ # sang google.com khi click here.
+				// });
+					$('#btn1').click(function(){
+					$('#ck1').prop('checked', false);// prop dùng để set get giá trị true or false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- <label id="lbl1"></label> -->
+	<!-- 	<input type="text" id="txt1"> -->
+		<!-- <a href="#" id="link1">Link1</a> -->
+		<input type="checkbox" id="ck1" checked="checked" />
+		<br>
+		<div id="div1">
+			<span id="spanProp"></span>
+			<span id="spanAttr"></span>
+		</div>
+		<button id="btn1">click here</button>
+	<!-- 	<button id="btn2">get click here</button>
+		<button id="btn3">change color</button> -->
+	</body>
+</html>

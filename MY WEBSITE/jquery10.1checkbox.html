@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				$('#btnSubmit').click(function(){
+					var chkchecked = $('input[type="checkbox"]:checked');// :checked là chỉ lấy những thằng nào đã được check
+					if(chkchecked.length>0){
+						$('#divResult').html(chkchecked.length + " : checkbox selected <br>");//dùng length là để đếm số lượng checkbox
+						chkchecked.each(function(){
+							$('#divResult').append($(this).val() + "<br>");//append là thành phần chèn thêm nằm ở vị trí sau cùng. this là . vòng lập each là dùng để lọc ra những thằng nào được check.
+						});
+					}
+					else{
+						$('#divResult').text("no checkbox selected");
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<label>
+			<input type="checkbox" value="contrai" />contrai
+		</label> <!-- checkbox ta có thể tích nhiều cái cùng lúc -->
+		<label>
+			<input type="checkbox" value="congai" />congai
+		</label>
+		<label>
+			<input type="checkbox" value="bede" />bede
+		</label>
+		<label>
+			<input type="checkbox" value="khongxacdinh" />khongxacdinh
+		</label>
+		
+		
+		<br>
+		<br>
+		<input type="button" id="btnSubmit" value="Submit" />
+		<br>
+		<br>
+		<div id="divResult">
+		</div>
+	</body>
+</html>

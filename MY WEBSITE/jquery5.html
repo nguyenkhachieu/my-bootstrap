@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<style>
+			.abc {
+				background-color: aqua;
+			}
+		</style>
+		<script src="js/jquery-3.2.1.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function () {
+				// alert($('table').html());
+				// $('table,a,div').css('background-color' , 'yellow'); //<!--nếu muốn tô màu phần nào thì điền vào trong $() chọn table thì mình table có màu chọn div thì mình div có màu ...............-->
+				// $('#table1 tr:even').css('background-color' , 'yellow');//tr:even  truy cập đến cột chẵn để bôi màu vàng
+				// $('#table1 tr:odd').css('background-color' , 'grey'); //tr:odd  truy cập đến cột lẻ để bôi màu xám
+			// 	$('#table1 tr:even').each(function (){
+			// 		alert($(this).html())// lấy từng dòng tr của html bằng thẻ this.
+			// 	});
+			
+				alert($('ul li:last').addClass('abc'));//lấy từ css addClass dùng để gọi cái class từ css
+			 });
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>selector1</li>
+			<li>selector2</li>
+			<li>selector3</li>
+			<li>selector4</li>
+
+
+		</ul>
+		<table id="table1" border="1"><!--dùng để tạo table -->
+			<tr>
+				<td>c#</td>
+				<td>ASP.NET</td>
+				<td>SQL server</td>	
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip</td>
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip</td>
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip12</td>
+			</tr>
+		</table>
+		<br>
+		<table id="table2" border="1"><!--dùng để tạo table -->
+			<tr>
+				<td>c#</td>
+				<td>ASP.NET</td>
+				<td>SQL server</td>	
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip</td>
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip</td>
+			</tr>
+			<tr>
+				<td>ADO.NET</td>
+				<td>jquery</td>
+				<td>javascrip1</td>
+			</tr>
+		</table>
+		<br>
+		<div>
+		 	<a href="facebook.com">sakdhaksjhaskj</a>
+		</div>
+		<br>
+		<a href="google.com">asdnasm,faasfns</a>
+	</body>
+</html>

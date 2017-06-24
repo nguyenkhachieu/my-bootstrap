@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<style>
+			.color{
+				color:red;
+			}
+		</style>
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function (){
+				$('#aaa').on('click', function() {
+					$('h1').addClass('color');
+				});
+				$('#bbb').on('click', function() {
+					$('h1').removeClass('color');
+				});
+				$('#ccc').on('click', function() {
+					$('h1').toggleClass('color');
+				});// bao gom ca addClass va removeClass
+				$('#ddd').on('click', function() {
+					alert($('h1').hasClass('color'));//dung de true hoac flase
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>This is class mutilmass</h1>
+		<br>
+		<button id="aaa">add color</button>
+		<button id="bbb">remove color</button>
+		<button id="ccc">toggle color</button>
+		<button id="ddd">has class</button>
+	</body>
+</html>

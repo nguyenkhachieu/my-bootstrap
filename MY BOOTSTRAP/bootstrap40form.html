@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customDiv.css" rel="stylesheet">
+
+  </head>
+  <body> 
+    <div class="container"> 
+      <div class="row">
+        <div class="col-xs-12">
+        <br>
+            <button class="btn btn-primary btn-sm pull-right" data-target="#loginmodal" data-toggle="modal">Login</button>
+            <div class="modal" data-keyboard="false" id="loginmodal" tabindex="-1" ><!-- class="modal" khai báo modal để khi nhấn vào login thì mới hiện ra form -->
+                <div class="modal-dialog"> <!-- class="modal-dialog" dùng để cho màn hình form vừa đủ đẹp khi nhấn login  -->
+                    <div class="modal-content"><!-- class="modal-content" dùng để cho màn hình màu trắng trong cái modal-dialog -->
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Login</h4>          
+                        </div> 
+                        <div class="modal-body">
+                           <form>
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input class="form-control" placeholder="Login UserName" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input class="form-control" placeholder="Login Password" type="password">
+                            </div>    
+                           </form>      
+                        </div> 
+                        <div class="modal-footer">
+                              <button class="btn btn-primary">Login</button>  
+                              <button class="btn btn-primary" data-dismiss="modal">Close</button>       
+                        </div>      
+                    </div>      
+                </div>        
+            </div>      
+      
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

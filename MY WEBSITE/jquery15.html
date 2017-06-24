@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function (){
+				$('div').prepend('<b>Programming</b> ');//prepend là thêm giá trị vào đầu của từng div
+				$('div').append(' <b>Programming</b> ');
+				$('div').append($('#aa'));
+			});
+		</script>
+	</head>
+	<body>
+		<span id="aa">coures</span>
+		<div>Jquery</div>
+		<div>C#</div>
+		<div>PHP</div>
+	</body>
+</html>

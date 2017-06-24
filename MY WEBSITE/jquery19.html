@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function (){
+				var result = '';
+				$('.inputRequired').change(function(){//sự kiện change xảy ra khi 1 giá trị của element bị thay đổi
+					var value = $(this).val();
+					if (result == '') {
+						result = value;
+					}
+					else{
+						result += ',' + value;
+					}
+					$('#divResult').html(result);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td>
+					<input id="txtFirstname" type="text" class="inputRequired" />
+				</td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td>
+					<input id="txtLastname" type="text" class="inputRequired" />
+				</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td>
+					<select id="ddlcity" class="inputRequired">
+						<option value="Select">Select</option>
+						<option value="New York">New York</option>
+						<option value="London">London</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Sydney">Sydney</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Favourrite Color</td>
+				<td>
+					<input id="radioRed" name="color" type="radio" value="Red" class="inputRequired" />Red
+					<input id="radioGreen" name="color" type="radio" value="Green" class="inputRequired" />Green
+					<input id="radioBlue" name="color" type="radio" value="Blue" class="inputRequired" />Blue
+				</td> <!-- name phai chon cung ten thi ta moi chon 1 trong 3 duoc -->
+			</tr>
+			<tr>
+				<td>Contact Method</td>
+				<td>
+					<input id="chkBoxEmail" type="checkbox" value="Email" class="inputRequired" />Email
+					<input id="chkBoxPhone" type="checkbox" value="Phone" class="inputRequired" />Phone
+					<input id="chkBoxSoxialMedia" type="checkbox" value="Social Media" class="inputRequired" />Social Media
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Comments
+				</td>
+				<td>
+					<textarea id="txtComment" class="inputRequired"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input id="btnSubmit" type="button" value="Submit">
+				</td>
+				<td>
+					<div id="divResult"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

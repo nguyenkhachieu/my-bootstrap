@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				$('#btnsubmit').click(function(){
+					var selected = $('#ddlskills option:selected');//:selected chọn những giá trị của option
+					if (selected.length>0) {
+						var result = '';//đặt tên biến
+						selected.each(function(){
+						result += 'Value: ' + $(this).val() + ".  Text: " + $(this).text() + "<br>";
+						});
+						$('#divresult').html(result);
+					}
+					else{
+						$('#divresult').html('No selected')
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<select id="ddlskills" multiple><!-- multiple là dùng để cho người dùng chọn được nhiều -->
+			<option>Choose language</option>
+			<option value="C#">C#</option>
+			<option value="Java">Java</option>
+			<option value="C++">C++</option>
+			<option value="PHP">PHP</option>
+			<option value="pytho">pytho</option>
+		</select>
+		<br>
+		<br>
+		<input type="button" value="submit" id="btnsubmit" />
+		<br>
+		<br>
+		<br>
+		<div id="divresult"></div>
+	</body>
+</html>

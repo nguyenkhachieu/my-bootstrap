@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customDiv.css" rel="stylesheet">
+
+  </head>
+  <body> 
+    <div class="container"> 
+      <div class="row">
+        <br>
+          <div class="col-xs-12" class="panel panel-default">
+            <div class="panel-heading">
+               <a href="#imageGallery" class="btn btn-primary" data-toggle="collapse">Toggle Images Gallery</a><!-- href="#imageGallery" và data-toggle="collapse" dùng để khi ta nhấn chuột vào  Toggle Images Gallery thì hình sẽ mất đi và nhấn tiếp thi hình hiện ra. nó như 1 cái công tắc.  -->
+            </div>
+          </div>
+          <div class="panel-body collapse" id="imageGallery">  <!-- sử dụng collapse để khi mở màn hình ra thì ảnh đang bị ẩn và nhấn Toggle Images Gallery thì hình hiện ra -->
+            <div class="col-xs-4 ">
+               <a href="images/chyrsanthemum.jpg" class="thumbnail">
+                  <p>Chyrsanthemum</p>
+                  <img src="images/chyrsanthemum.jpg">
+               </a>
+            </div> 
+            <div class="col-xs-4 ">
+               <a href="images/chyrsanthemum.jpg" class="thumbnail">
+                  <p>Chyrsanthemum</p>
+                  <img src="images/chyrsanthemum.jpg">
+               </a>
+            </div> 
+            <div class="col-xs-4 ">
+               <a href="images/chyrsanthemum.jpg" class="thumbnail">
+                  <p>Chyrsanthemum</p>
+                  <img src="images/chyrsanthemum.jpg">
+               </a>
+            </div> 
+          </div>  
+           
+      
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

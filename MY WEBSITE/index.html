@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style1.css" />
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js'></script>	
+		<script src="js/easyAccordion.js"></script>
+		<script src="js/utility.js"></script>
+		<script src="js/main-nav.js"></script>
+		<script src="js/tab-nav.js"></script>
+	</head>
+	<body>
+		<div id="page-wrap">
+			<div id="header">
+				<h1 id="logo"> <a href="#">Origin Blog</a> </h1>
+			</div>
+			<div id="top-bar" class="group">
+				<ul id="menu-page-menu" >
+					<li class="current-page-item"><a href="#">Trang chủ</a></li>
+					<li><a href="#">Tác giả &raquo;</a>
+						<ul>
+							<li><a href="#">Tác giả A</a></li>
+							<li><a href="#">Tác giả B</a></li>
+							<li><a href="#">Tác giả C</a></li>
+						</ul>		
+					</li>
+					<li><a href="#">Tutorial &raquo;</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Photoshop</a></li>
+							<li><a href="#">Hosting</a></li>
+							<li><a href="#">Domain Name</a></li>
+							<li><a href="#">CSS</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Liên hệ &raquo;</a>
+						<ul>
+							<li><a href="#">Demon Warlock</a></li>
+							<li><a href="#">Frost Mage</a></li>
+							<li><a href="#">Descipline Priest</a></li>
+							<li><a href="#">Furry Warrior</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="search">
+
+					<form id="search-form" action="" method="get" accept-charset="utf-8">
+						<input type="text" name="s" id="s" value=""/>
+						<input type="submit" name="submit" value="Search"/>
+						
+					</form>
+					<!--google search-->
+				</div>
+			</div><!--end top-bar-->	
+			<div id="page-info">
+				<div id="featured">
+					<div id="accordion"><!--nhu 1 cai hub de sau nay jquery tim thay-->
+						<dl class="easy-accordion">
+							<dt>Firt slide</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img1.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>
+							<dt>secon slide</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img2.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>
+							<dt>One more slide</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img3.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>
+							<dt>ANOTHER SLIDE</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img4.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>
+							<dt>ANOTHER SLIDE</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img5.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>
+							<dt>ANOTHER SLIDE</dt>
+								<dd>
+									<h3><a href="#">This is the first slide</a></h3>
+									<p><img src="images/post-images/img6.png" alt="All text to go here", width="100px" height="100px" />Customer decide understand why it can into here</p>
+								</dd>				
+						</dl>			
+					</div>		
+				</div><!--end featured-->
+				<div id="facebook">
+					<img src="https://danluat.thuvienphapluat.vn/userfiles/files/1138650/Images/fb.png" alt="facebook", width="200px" height="200px"/>			
+				</div>			
+			</div><!--end page-info-->
+
+			<div id="content-wrap">
+				<div id="First-sidebar">
+					<div class="widget">
+						<h2>Site Navigation</h2>
+						<ul id="Menu-categories-menu">
+							<li><a href="#">Web design</a></li>
+							<li><a href="#">Photoshop</a></li>
+							<li><a href="#">Hosting</a></li>
+							<li><a href="#">Domain name</a></li>
+							<li><a href="#">CSS</a></li>
+						</ul>
+					</div>
+					<div class="widget">
+						<h2>RSS Feeds</h2>
+						<p class="date">August 20, 2012</p>
+						<h4><a href="#">Lorem ipsum dolor sit amet</h4>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Ut felis.</p>
+					</div>
+				</div><!--end-First-sidebar -->
+
+				<div id="main-content">
+					<h2><a href="#">Video</h2>
+					<div class="post">
+						<a href="#"><img src="images/post-images/post.jpg" alt="post image"></a>
+						<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Ut felis</p>
+						<p class="meta-data">By: Demon Warlock | On: August 20, 2012</p>
+						<a class="comment-link" href="#">6</a>
+						<a class="more-link" href="#">Continue reading ....</a>
+					</div><!--end-post-->
+
+					<h2><a href="#">PHP Video</h2>
+					<div class="post">
+						<a href="#"><img src="images/post-images/post-2.png" alt="post image"></a>
+						<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Ut felis</p>
+						<p class="meta-data">By: Demon Warlock | On: August 20, 2012</p>
+						<a class="comment-link" href="#">6</a>
+						<a class="more-link" href="#">Continue reading ....</a>
+					</div><!--end-post-->
+
+					<h2><a href="#">jQuery Tatorials</h2>
+					<div class="post">
+						<a href="#"><img src="images/post-images/post-3.png" alt="post image"></a>
+						<h3><a href="#">Lorem ipsum dolor sit amet</a></h3>
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Ut felis</p>
+						<p class="meta-data">By: Demon Warlock | On: August 20, 2012</p>
+						<a class="comment-link" href="#">6</a>
+						<a class="more-link" href="#">Continue reading ....</a>
+					</div><!--end-post-->
+				</div><!--end-main-content-->
+				<div id="secon-sidebar">
+					<ul class="tabs">
+						<li><a href="#random" class="active">Random</a></li>
+						<li><a href="#news">Recent</a></li>
+						<li><a href="#popular">Popular</a></li>
+					</ul>
+					<div class="tab-container">
+						<div id="random" class="tab-content">
+							<ul>
+								<li><a href="#">HTML co ban</a></li>
+								<li><a href="#">Tao trang web dau tien</a></li>
+								<li><a href="#">Giao dien voi css</a></li>
+								<li><a href="#">Tu PSD sang HTML</a></li>
+								<li><a href="#">Cach su dung div</a></li>
+								<li><a href="#">CCS selector</a></li>
+								<li><a href="#">Photoshop can ban</a></li>
+								<li><a href="#">Gioi thieu ve CSS</a></li>
+								<li><a href="#">PHP can ban</a></li>
+								<li><a href="#">Loi thuong gap</a></li>
+							</ul>
+						</div>
+
+						<div id="news" class="tab-content">
+							<ul>
+								<li><a href="#">HTML co ban</a></li>
+								<li><a href="#">Tao trang web dau tien</a></li>
+								<li><a href="#">Giao dien voi css</a></li>
+								<li><a href="#">Tu PSD sang HTML</a></li>
+								<li><a href="#">Cach su dung div</a></li>
+								<li><a href="#">CCS selector</a></li>
+								<li><a href="#">Photoshop can ban</a></li>
+								<li><a href="#">Gioi thieu ve CSS</a></li>
+								<li><a href="#">PHP can ban</a></li>
+								<li><a href="#">Loi thuong gap</a></li>
+							</ul>
+						</div>
+
+						<div id="popular" class="tab-content">
+							<ul>
+								<li><a href="#">HTML co ban</a></li>
+								<li><a href="#">Tao trang web dau tien</a></li>
+								<li><a href="#">Giao dien voi css</a></li>
+								<li><a href="#">Tu PSD sang HTML</a></li>
+								<li><a href="#">Cach su dung div</a></li>
+								<li><a href="#">CCS selector</a></li>
+								<li><a href="#">Photoshop can ban</a></li>
+								<li><a href="#">Gioi thieu ve CSS</a></li>
+								<li><a href="#">PHP can ban</a></li>
+								<li><a href="#">Loi thuong gap</a></li>
+							</ul>
+						</div>
+
+					</div><!--end-tab-container-->
+
+					<div class="widget">
+						<h2>Discussion</h2>
+							<ul>
+								<li>
+									<strong><a href="#">Lorem ipsum dolor sit amet</a></strong>
+									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								</li>
+
+								<li>
+									<strong><a href="#">Lorem ipsum dolor sit amet</a></strong>
+									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								</li>
+
+								<li>
+									<strong><a href="#">Lorem ipsum dolor sit amet</a></strong>
+									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+								</li>
+							</ul>
+
+					</div>
+				</div><!--end-Secon-Sidebar-->
+			</div><!--end-conten-wrap-->
+		</div><!--end-page-wrap-->
+		<div id="footer">
+			<p>Do you care footer?</p>
+			<img src="images/meme.jpg">
+		</div>
+
+	</body>
+</html>

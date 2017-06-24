@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function (){
+				alert($('li').map(function(index,element){//map cũng giống như là each được lặp đi lặp lại các phần tử trong DOM. khi mà tạo 1 chuổi hay 1 array thì dùng map tốt hơn each
+					return ($(element).text());
+				}).get());// nếu muốn gạch | thì tà thêm .get().join('|')
+			});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>
+			<li>d</li>
+			<li>e</li>
+			<li>f</li>
+			<li>g</li>
+		</ul>
+	</body>
+</html>

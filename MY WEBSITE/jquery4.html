@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function () {
+				var button = $('#btn2') ; 
+				if(button.length >0) 
+				{
+					alert('element found')
+				}
+				else{
+					alert('element not found')
+
+				// ///////////$('#btn1').click(function () {
+				// 	          $('#btn1').css('background-color' , 'yellow'); click vào thi nó sẽ màu vàng ////////
+				// });
+				// $('#btn1').css('background-color' , 'yellow');
+				}
+			});
+		</script><!--dùng để trang trí tô màu như css.  if là một đối tượng của jQuery tìm coi btn2 có hay không nếu có thì sẽ báo là element found-->
+	</head>
+	<body>
+		<button id="btn1">click here</button>
+		<button id="btn2">click here</button>
+	</body>
+</html>

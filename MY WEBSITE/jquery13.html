@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				var employeeJson = [
+				{
+					"firstName": "TEDU",
+					"lastName": "App",
+					"email": "tedu@gmail.com",
+					"age": 14
+				},
+				{
+					"firstName": "abc",
+					"lastName": "bcd",
+					"email": "abc@gmail.com",
+					"age": 16
+				}
+				];
+				var result ='';
+				$.each($(employeeJson), function(i,item){
+				result += "firstName: " + item.firstName + "<br>" + "lastName: " + item.lastName + "<br>";
+				});
+				$('#result').html(result);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="result">
+			
+		</div>
+	</body>
+</html>

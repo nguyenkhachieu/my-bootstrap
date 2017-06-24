@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				var employeeJson = [{
+					"firstName": "TEDU",
+					"lastName": "App",
+					"email": "tedu@gmail.com",
+					"age": 14
+				},
+				{
+					"firstName": "abc",
+					"lastName": "bcd",
+					"email": "abc@gmail.com",
+					"age": 16
+				}
+				];
+				
+				$('#result').html(JSON.stringify(employeeJson));
+				var content = $('#result').html();//chuyen doi string voi doi tuong JSON
+				var ojectJson = JSON.parse(content);//chuyen doi string voi doi tuong JSON
+				console.log(ojectJson);//chuyen doi string voi doi tuong JSON
+			});//chuyen doi string voi doi tuong JSON
+		</script>
+	</head>
+	<body>
+		<div id="result">
+			
+		</div>
+	</body>
+</html>

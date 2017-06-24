@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customDiv.css" rel="stylesheet">
+
+  </head>
+  <body> 
+    <div class="container"> 
+      <div class="row">
+      	<div class="col-xs-12">
+      	<br>
+      	   <form class="form-horizontal"> <!-- sử dụng form ngang -->
+             <div class="form-group has-success has-feedback">  <!-- has-success dùng để tô màu xanh -->
+                <label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>  
+                <div class="col-xs-10">
+                   <input id="txtStrongPassword" type="text" class="form-control" placeholder="Your Password"><!-- class="form-control" dùng để mở rộng cái text cho vừa với màn hình -->
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span><!-- form-control-feedback để cho icon vào trong input -->
+                   <span class="help-block">Strong Password</span>
+                </div>   
+             </div>
+             <div class="form-group has-warning has-feedback">  <!-- has-warning dùng để tô màu đỏ -->
+                <label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>  
+                <div class="col-xs-10">
+                   <input id="txtStrongPassword" type="text" class="form-control" placeholder="Your Password"><!-- class="form-control" dùng để mở rộng cái text cho vừa với màn hình -->
+                   <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                   <span class="help-block">Weak Password</span>
+                </div>   
+             </div>
+             <div class="form-group has-error has-feedback">  <!-- has-success dùng để tô màu xanh -->
+                <label class="col-xs-2 control-label" for="txtStrongPassword">Age</label>  
+                <div class="col-xs-10">
+                   <input id="txtStrongPassword" type="text" class="form-control" placeholder="Your Age"><!-- class="form-control" dùng để mở rộng cái text cho vừa với màn hình -->
+                   <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                   <span class="help-block">Invalid Age</span>
+                </div>   
+             </div>
+             
+           </form>
+           <form class="form-horizontal"> <!-- sử dụng form ngang -->
+             <div class="form-group has-success has-feedback">  <!-- has-success dùng để tô màu xanh -->
+              
+                <label class="col-xs-2 control-label" for="txtStrongPassword">Password</label>  
+                <div class="col-xs-10">
+                <div class="input-group">
+                <span class="input-group-addon">$</span> <!-- class="input-group-addon" dùng để chèn $ vào đầu của input -->
+                   <input id="txtStrongPassword" type="text" class="form-control" placeholder="Your Password"><!-- class="form-control" dùng để mở rộng cái text cho vừa với màn hình -->
+               </div>    
+                   <span class="glyphicon glyphicon-ok form-control-feedback"></span><!-- form-control-feedback để cho icon vào trong input -->
+                   <span class="help-block">Strong Password</span>
+                </div>   
+             </div>
+            </form> 
+      	</div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

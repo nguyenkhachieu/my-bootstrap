@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customDiv.css" rel="stylesheet">
+
+  </head>
+  <body> 
+    <div class="container"> 
+      <div class="row">
+        <div class="col-xs-7">
+        <br>
+             <div class="panel-group" id="accordion">
+               <div class="panel panel-primary"> 
+                 <div class="panel-heading">
+                    <h4 class="panel-title"><!-- panel-title làm cho chữ nhỏ lại không theo h4 -->
+                      <a href="#panelBodyOne" data-toggle="collapse" data-parent="#accordion">
+                        Asia
+                      </a><!-- data-parent="#accordion" dùng để khi ta nhấn vào Asia thì 2 cái  North America và Europe sẽ đóng lại và ngược lại -->
+                    </h4>
+                 </div>
+                 <div id="panelBodyOne">
+                   <div class="panel-body">
+                     <ul>
+                       <li>India</li>
+                       <li>China</li>
+                       <li>Japan</li>
+                     </ul>
+                   </div>
+                 </div>  
+               </div>
+
+              <div class="panel panel-primary"> 
+                 <div class="panel-heading">
+                    <h4 class="panel-title"><!-- panel-title làm cho chữ nhỏ lại không theo h4 -->
+                      <a href="#panelBodyTwo" data-toggle="collapse" data-parent="#accordion">
+                        North America
+                      </a>
+                    </h4>
+                 </div>
+                 <div id="panelBodyTwo">
+                   <div class="panel-body">
+                     <ul>
+                       <li>USA</li>
+                       <li>CANADA</li>
+                       <li>MEXICO</li>
+                     </ul>
+                   </div>
+                 </div>  
+               </div>
+
+               <div class="panel panel-primary"> 
+                 <div class="panel-heading">
+                    <h4 class="panel-title"><!-- panel-title làm cho chữ nhỏ lại không theo h4 -->
+                      <a href="#panelBodyThree" data-toggle="collapse" data-parent="#accordion">
+                        Europe
+                      </a>
+                    </h4>
+                 </div>
+                 <div id="panelBodyThree">
+                   <div class="panel-body">
+                     <ul>
+                       <li>India</li>
+                       <li>China</li>
+                       <li>Japan</li>
+                     </ul>
+                   </div>
+                 </div>  
+               </div>
+
+             </div>
+      
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

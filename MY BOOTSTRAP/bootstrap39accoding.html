@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="customDiv1.css" rel="stylesheet">
+
+  </head>
+  <body> 
+    <div class="container"> 
+      <div class="row">
+        <div class="col-xs-7">
+        <br>
+          <div class="well">
+            <button class="btn btn-primary" id="ExpandAll">ExpandAll</button>
+            <button class="btn btn-primary" id="CloseAll">CloseAll</button>
+          </div>
+            <div class="panel-group" id="according">
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-up"></span>
+                          <a href="#abc" data-toggle="collapse" data-parent="#according">Desert</a>
+                      </h4>
+                  </div>
+                  <div id="abc" class="panel-collapse collapse">
+                      <div class="panel-body">
+                         <img src="images/tulip.jpg" class="img-responsive" >
+                      </div>
+                  </div>
+                  
+               </div>
+
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-down"></span>
+                          <a href="#abcd" data-toggle="collapse" data-parent="#according">penguins</a>
+                      </h4>
+                  </div>
+                  <div id="abcd" class="panel-collapse collapse">
+                      <div class="panel-body">
+                         <img src="images/Gusev_Spirit_01.jpg" class="img-responsive" >
+                      </div>
+                  </div>
+               </div>
+
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                          <span class="glyphicon glyphicon-menu-down"></span>
+                          <a href="#abcde" data-toggle="collapse" data-parent="#according">penguins</a>
+                      </h4>
+                  </div>
+                  <div id="abcde" class="panel-collapse collapse">
+                      <div class="panel-body">
+                         <img src="images/logo.png" class="img-responsive" >
+                      </div>
+                  </div>
+               </div>
+
+
+            </div> 
+      
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.collapse').on('shown.bs.collapse', function(){
+          $(this).parent().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+        }).on('hidden.bs.collapse', function(){
+          $(this).parent().find('.glyphicon-menu-up').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+         }); 
+        $('#ExpandAll').click(function(){
+          $('.panel-collapse.collapse').collapse('show');
+        }); 
+        $('#CloseAll').click(function(){
+          $('.panel-collapse.collapse').collapse('hide'); 
+        });  
+      });
+    </script>
+  </body>
+</html>

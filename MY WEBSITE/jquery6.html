@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title>Origin Blog</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.js"></script><!--      THƯ VIỆN CỦA jQUERY             -->	
+		<script>
+			$(document).ready(function(){
+				//$('#first .small').css('border' , '1px solid red');	
+				$('.big').filter('.small').css('border' , '1px solid red');//mình filter ra những giá trị nào chứa vừa big vừa small
+			});
+		</script>
+	</head>
+	<body>
+		<div class="big">
+			<span class="small">This is class selector</span>
+		</div>
+		<div id="first" class="big small">
+			<span class="small">This is class selector</span>
+		</div>
+		<div class="small">
+			<p>This is class selector</p>
+		</div>
+		<div class="small">
+			<p>This is class selector</p>
+		</div>
+		<div class="small">
+			<div class="xsmall">this is class selector</div>
+		</div>
+	</body>
+</html>
